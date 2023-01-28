@@ -10,8 +10,6 @@ export default function Battery(props) {
     return () => clearInterval(interval);
   }, [batteryLevel]);
 
-  console.log(batteryLevel);
-
   let batteryLevelStyle = {
     width: `${batteryLevel}%`,
   };

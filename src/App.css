@@ -5,6 +5,8 @@
   background-size: cover;
 }
 
+/* nav */
+
 .navbar {
   background-color: rgba(0, 49, 95, 0.8);
   height: 30px;
@@ -47,9 +49,11 @@
   margin: 0 10px;
 }
 
-.battery-charging{
+/* battery */
+
+.battery-charging {
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 .battery-level {
@@ -58,11 +62,64 @@
   border-radius: 2px;
 }
 
-.battery-cell{
+.battery-cell {
   transform: translateX(100%);
   width: 4px;
   height: 5px;
   border-right: 1px solid rgba(138, 138, 138, 0.3);
   border-radius: 50%;
-
 }
+
+/* ------------------------------------------- */
+
+/* wifi */
+
+.wifi {
+  height: 20px;
+  width: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(3px);
+}
+
+.wifi-cell {
+  border: 3px solid transparent;
+  border-top-color: rgba(177, 177, 177, 0.3);
+  border-radius: 50%;
+  padding-top: 10px;
+}
+
+.wifi-line1,
+.wifi-line2,
+.wifi-line3 {
+  border-top-color: rgba(177, 177, 177, 0.3);
+  margin-bottom: 4px;
+}
+
+.wifi-line1 {
+  width: 1%;
+  border-radius: 30%;
+  transform: translateY(-180%);
+}
+
+.wifi-line2 {
+  width: 34%;
+  border-radius: 40%;
+  transform: translateY(-90%);
+}
+
+.wifi-line3 {
+  width: 67%;
+  border-radius: 50%;
+  
+}
+
+.wifi-cell-active {
+  border-top-color: white;
+}
+
+/* -------------------------------------------- */
+
+/* -------------------------------------------- */

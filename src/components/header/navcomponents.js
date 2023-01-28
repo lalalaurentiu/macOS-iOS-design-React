@@ -1,5 +1,7 @@
 import React from "react";
 import Battery from "../battery";
+import Wifi from "../wifi";
+
 const navcomponentsLeft = [
   {
     id: "nav-apple-logo",
@@ -67,7 +69,13 @@ const navcomponentsRight = [
   {
     id: "nav-battery",
     name: {
-      func: (key) => <Battery key={key} level={5} />,
+      func: (key) => <Battery key={key} level={100} />,
+    },
+  },
+  {
+    id: "nav-wifi",
+    name: {
+        func: (key) => <Wifi key={key} />,
     },
   },
     //  id: "nav-battery",
