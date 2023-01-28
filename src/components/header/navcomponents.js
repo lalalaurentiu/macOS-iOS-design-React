@@ -1,4 +1,4 @@
-const navComponents = [
+const navcomponentsLeft = [
   {
     name: {
       logoUrl: "/images/apple.svg",
@@ -41,4 +41,36 @@ const navComponents = [
   },
 ];
 
-export default navComponents;
+const navcomponentsRight = [
+  {
+    name: {
+      logoUrl: "/images/romania-flag.svg",
+    },
+  },
+  {
+    name: {
+      logoUrl: "/images/bluetooth.svg",
+    },
+  },
+  // battery
+  // wifi
+  {
+    name: {
+      logoUrl: "/images/search.svg",
+    },
+  },
+  {
+    name: {
+      logoUrl: "/images/toogles.svg",
+    },
+  },
+  {
+    name: {
+      logoUrl: "/images/siri.webp",
+    },
+  },
+  // date
+  // time
+];
+
+export { navcomponentsLeft, navcomponentsRight };
