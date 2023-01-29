@@ -1,6 +1,7 @@
 import React from "react";
 import Battery from "../battery";
 import Wifi from "../wifi";
+import DateTime from "../DateTime";
 
 const navcomponentsLeft = [
   {
@@ -78,8 +79,6 @@ const navcomponentsRight = [
         func: (key) => <Wifi key={key} />,
     },
   },
-    //  id: "nav-battery",
-  // wifi
   {
     id: "nav-clock",
     name: {
@@ -98,10 +97,12 @@ const navcomponentsRight = [
       logoUrl: "/images/siri.webp",
     },
   },
-//   id: 8,
-  // date
-//   id: 9,
-  // time
+  {
+    id: "nav-clock",
+    name: {
+      func: (key) => <DateTime key={key} />,
+    },
+  }
 ];
 
 export { navcomponentsLeft, navcomponentsRight };

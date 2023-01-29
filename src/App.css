@@ -82,6 +82,7 @@
   flex-direction: column;
   align-items: center;
   transform: translateY(3px);
+  cursor: pointer;
 }
 
 .wifi-cell {
@@ -118,6 +119,11 @@
 
 .wifi-cell-active {
   border-top-color: white;
+}
+
+.nav-date-time{
+  cursor: pointer;
+  margin: 0 10px;
 }
 
 /* -------------------------------------------- */
