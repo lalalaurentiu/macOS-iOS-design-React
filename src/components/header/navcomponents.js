@@ -89,8 +89,8 @@ const navcomponentsLeft = [
           {
             id: nanoid(),
             name: "Q",
-          }
-        ]
+          },
+        ],
       },
       {
         id: nanoid(),
@@ -107,7 +107,7 @@ const navcomponentsLeft = [
           {
             id: nanoid(),
             name: "Q",
-          }
+          },
         ],
       },
     ],
@@ -211,7 +211,312 @@ const navcomponentsLeft = [
     name: {
       sectionName: "File",
     },
-    subSection: [],
+    subSection: [
+      {
+        id: nanoid(),
+        name: "New Finder Window",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "N",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "New Folder",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "N",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "New Folder with Selection",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-control-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "N",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "New Smart Folder",
+      },
+      {
+        id: nanoid(),
+        name: "New Tab",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "T",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Open",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "O",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Open With",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/arrowright.svg",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Close Window",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "W",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Get Info",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "I",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Rename",
+      },
+      {
+        id: nanoid(),
+        name: "Compress",
+      },
+      {
+        id: nanoid(),
+        name: "Duplicate",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "D",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Make Alias",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-control-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "A",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Quick Look",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "Y",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Print",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "P",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Share",
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Show Original",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "R",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Add to Sidebar",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-control-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "Y",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Move to Bin",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-delete-command.svg",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Eject",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "E",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        elements: () => {
+          const colors = [
+            "red",
+            "orange",
+            "yellow",
+            "green",
+            "blue",
+            "purple",
+            "gray",
+          ];
+          const colorElements = colors.map((colorElement) => {
+            return (
+              <div
+                key={nanoid()}
+                className="color-element"
+                style={{ backgroundColor: colorElement }}
+              ></div>
+            );
+          });
+          return (
+            <div key={nanoid()} style={{ justifyContent: "flex-start" }}>
+              {colorElements}
+            </div>
+          );
+        },
+      },
+      {
+        id: nanoid(),
+        name: "Tags...",
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Find",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "F",
+          },
+        ],
+      }
+    ],
   },
   {
     id: nanoid(),

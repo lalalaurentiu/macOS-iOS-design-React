@@ -3,7 +3,7 @@ import { SetNavElement } from "./utils";
 
 export default function Navicon(props) {
 
-  const { show, onClick, subsections } = SetNavElement(props.url, ".navicon");
+  const { show, onClick, subsections } = SetNavElement(props.url);
 
   return (
     <div onClick={onClick} className="navicon">

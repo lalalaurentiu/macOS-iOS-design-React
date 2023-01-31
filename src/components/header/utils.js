@@ -1,10 +1,12 @@
 import React from "react";
 import SubSection from "./SubSection";
 
-function SetNavElement(propsSubSection, bodyElement /* bodyElement is a css class for identify body parent */ ) {
+function SetNavElement(propsSubSection) {
+  let child;
   const isShow = false;
   const [show, setShow] = React.useState(isShow);
   const onClick = (e) => {
+    child = e.target;
     setShow(!show);
   };
 
@@ -12,7 +14,7 @@ function SetNavElement(propsSubSection, bodyElement /* bodyElement is a css clas
 
   const useEffect = React.useEffect(() => {
     const handleOutsideClick = (e) => {
-      if (!e.target.closest(bodyElement)) {
+      if (child !== e.target) {
         setShow(false);
       }
     };
@@ -35,4 +37,4 @@ function SetNavElement(propsSubSection, bodyElement /* bodyElement is a css clas
   };
 }
 
-export { SetNavElement }
+export { SetNavElement };
