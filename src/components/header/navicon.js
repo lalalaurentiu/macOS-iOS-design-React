@@ -1,33 +1,9 @@
 import React from "react";
-import SubSection from "./SubSection";
+import { SetNavElement } from "./utils";
 
 export default function Navicon(props) {
-  const isShow = false;
 
-  const [show, setShow] = React.useState(isShow);
-
-  const onClick = (e) => {
-    setShow(!show);
-  };
-
-  const body = document.querySelector("body");
-
-  React.useEffect(() => {
-    const handleOutsideClick = (e) => {
-      if (!e.target.closest(".navicon")) {
-        setShow(false);
-      }
-    };
-
-    body.addEventListener("click", handleOutsideClick);
-    return () => {
-      body.removeEventListener("click", handleOutsideClick);
-    };
-  }, [body]);
-
-  const subsections = props.url.subSection.map((subSection) => {
-    return <SubSection key={subSection.id} elements={Array(subSection)} />;
-  });
+  const { show, onClick, subsections } = SetNavElement(props.url, ".navicon");
 
   return (
     <div onClick={onClick} className="navicon">
