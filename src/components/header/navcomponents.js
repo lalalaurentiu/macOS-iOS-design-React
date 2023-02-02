@@ -648,7 +648,278 @@ const navcomponentsLeft = [
     name: {
       sectionName: "View",
     },
-    subSection: [],
+    subSection: [
+      {
+        id: nanoid(),
+        name: "as Icons",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "1",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "as List",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "2",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "as Columns",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "3",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "as Gallery",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "4",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Use Stacks",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-control-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "0",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Sort by",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/arrowright.svg",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Clean Up",
+      },
+      {
+        id: nanoid(),
+        name: "Clean Up By",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/arrowright.svg",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Hide Sidebar",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-option-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "S",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Hide Preview",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "P",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Hide Toolbar",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-option-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "T",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Show All Tabs",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "\\",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Hide Tab Bar",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "T",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Hide Path Bar",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-option-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "P",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Hide Status Bar",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "/",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Customize Toolbar...",
+      },
+      {
+        id: nanoid(),
+        name: "Customize Touch Bar...",
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Show View Options",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "J",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Show Preview Options",
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Enter Full Screen",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-control-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "P",
+          },
+        ],
+      },
+    ],
   },
   {
     id: nanoid(),
