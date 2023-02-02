@@ -523,7 +523,125 @@ const navcomponentsLeft = [
     name: {
       sectionName: "Edit",
     },
-    subSection: [],
+    subSection: [
+      {
+        id: nanoid(),
+        name: "Undo Rename",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "Z",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Rdo",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "Z",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Cut",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "X",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Copy",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "C",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Paste",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "V",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Select All",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "A",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Show Clipboard",
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Start Dictation...",
+      },
+      {
+        id: nanoid(),
+        name: "Emoji & Symbols",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "Space",
+          },
+        ],
+      },
+    ],
   },
   {
     id: nanoid(),
