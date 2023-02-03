@@ -3,6 +3,7 @@ import Battery from "../battery";
 import Wifi from "../wifi";
 import DateTime from "../DateTime";
 import { nanoid } from "nanoid";
+import NaviconGo from "./navicon-GO";
 
 const navcomponentsLeft = [
   {
@@ -515,7 +516,7 @@ const navcomponentsLeft = [
             name: "F",
           },
         ],
-      }
+      },
     ],
   },
   {
@@ -926,7 +927,293 @@ const navcomponentsLeft = [
     name: {
       sectionName: "Go",
     },
-    subSection: [],
+    subSection: [
+      {
+        id: nanoid(),
+        name: "Back",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "[",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Forward",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "]",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Enclosing Folder",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/arrowup.svg",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/clock.svg" name="Recents" />,
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "F",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/document.svg" name="Documents" />,
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "O",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/desktop.svg" name="Desktop" />,
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "D",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/download.svg" name="Downloads" />,
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-option-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "L",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/home.svg" name="Home" />,
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "H",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/computer.svg" name="Computer" />,
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "C",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/airdrop.svg" name="AirDrop" />,
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "R",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/network.svg" name="Network" />,
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "K",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/icloud.svg" name="iCloud Drive" />,
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "I",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/appstore.svg" name="Applications" />,
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "A",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/utilities.svg" name="Utilities" />,
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "U",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name:"Recent Folders",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/arrowright.svg",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name:"Go To Folder",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "G",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name:"Connect to Server",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "K",
+          },
+        ],
+      },
+    ],
   },
   {
     id: nanoid(),
