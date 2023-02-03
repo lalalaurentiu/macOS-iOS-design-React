@@ -1,4 +1,5 @@
 import React from "react";
+import { nanoid } from "nanoid";
 
 export default function SubSection(props) {
   const subsections = props.elements.map((subSection) => {
@@ -40,6 +41,8 @@ export default function SubSection(props) {
           <div> {subSection.name}</div>
         </div>
       );
+    } else if (subSection.elements){
+        return subSection.elements()
     } else {
       return (
         <div

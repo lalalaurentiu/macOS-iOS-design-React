@@ -7,7 +7,7 @@ export default function Navbar(props) {
     return navComponent.name.logoUrl ? (
       <Navicon key={navComponent.id} url={navComponent} />
     ) : (
-      <Navlink key={navComponent.id} name={navComponent.name.sectionName} />
+      <Navlink key={navComponent.id} name={navComponent} />
     );
   });
 
