@@ -1,5 +1,5 @@
 #root {
-  width: 100vw;
+  min-width: 1400px;
   height: 100vh;
   background-image: url("./../public/images/macbook.webp");
   background-size: cover;
@@ -182,6 +182,17 @@
 .subsection-images > img {
   margin-right: 5px;
   margin-left: 0;
+}
+
+.navlink-help-search {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  background-color: rgba(138, 138, 138, 0.7);
+  border: 0;
+  padding-left: 5px;
+  margin: 0;
+  color:white;
 }
 
 .color-nav{
