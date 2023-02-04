@@ -1319,7 +1319,39 @@ const navcomponentsLeft = [
     name: {
       sectionName: "Help",
     },
-    subSection: [],
+    subSection: [
+      {
+        id: nanoid(),
+        name: React.createElement("input", { type: "text", placeholder: "Search", className: "navlink-help-search" }),
+      },
+      {
+        id: nanoid(),
+        name: "macOS Help",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "?",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "See What's New in macOS",
+      },
+      {
+        id: nanoid(),
+        name: "New to macOS? Tour the Basics",
+      },
+      {
+        id: nanoid(),
+        name: "Get to know your Mac",
+      },
+    ],
   },
 ];
 

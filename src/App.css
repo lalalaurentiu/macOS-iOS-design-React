@@ -184,6 +184,17 @@
   margin-left: 0;
 }
 
+.navlink-help-search {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  background-color: rgba(138, 138, 138, 0.7);
+  border: 0;
+  padding-left: 5px;
+  margin: 0;
+  color:white;
+}
+
 .color-nav{
   display: flex;
   align-items: center;

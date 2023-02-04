@@ -53,7 +53,9 @@ export default function SubSection(props) {
               : { border: "none" }
           }
         >
-          <div> {subSection.name}</div>
+          <div style={
+            {width: "100%"}
+          }> {subSection.name}</div>
         </div>
       );
     }
