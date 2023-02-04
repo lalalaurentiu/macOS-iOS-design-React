@@ -42,7 +42,7 @@ const navcomponentsLeft = [
         img: [
           {
             id: nanoid(),
-            img: "/images/Buttons/arrowright.svg",
+            img: "/images/Buttons/chevronright.svg",
           },
         ],
         break: true,
@@ -164,7 +164,7 @@ const navcomponentsLeft = [
         img: [
           {
             id: nanoid(),
-            img: "/images/Buttons/arrowright.svg",
+            img: "/images/Buttons/chevronright.svg",
           },
         ],
         break: true,
@@ -301,7 +301,7 @@ const navcomponentsLeft = [
         img: [
           {
             id: nanoid(),
-            img: "/images/Buttons/arrowright.svg",
+            img: "/images/Buttons/chevronright.svg",
           },
         ],
       },
@@ -731,7 +731,7 @@ const navcomponentsLeft = [
         img: [
           {
             id: nanoid(),
-            img: "/images/Buttons/arrowright.svg",
+            img: "/images/Buttons/chevronright.svg",
           },
         ],
       },
@@ -745,7 +745,7 @@ const navcomponentsLeft = [
         img: [
           {
             id: nanoid(),
-            img: "/images/Buttons/arrowright.svg",
+            img: "/images/Buttons/chevronright.svg",
           },
         ],
         break: true,
@@ -1176,7 +1176,7 @@ const navcomponentsLeft = [
         img: [
           {
             id: nanoid(),
-            img: "/images/Buttons/arrowright.svg",
+            img: "/images/Buttons/chevronright.svg",
           },
         ],
         break: true,
@@ -1220,7 +1220,99 @@ const navcomponentsLeft = [
     name: {
       sectionName: "Window",
     },
-    subSection: [],
+    subSection: [
+      {
+        id: nanoid(),
+        name: "Minimize",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "M",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Zoom",
+      },
+      {
+        id: nanoid(),
+        name: "Move Window to Left Side of Screen",
+      },
+      {
+        id: nanoid(),
+        name: "Move Window to Right Side of Screen",
+      },
+      {
+        id: nanoid(),
+        name: "Cycle Through Windows",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-command.svg",
+          },
+          {
+            id: nanoid(),
+            name: "`",
+          }
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Show Previous Tab",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-control-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-shift-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/arrowright.svg",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Show Next Tab",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/Buttons/mac-control-command.svg",
+          },
+          {
+            id: nanoid(),
+            img: "/images/Buttons/arrowright.svg",
+          },
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Move Tab to New Window",
+      },
+      {
+        id: nanoid(),
+        name: "Merge All Windows",
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Bring All to Front",
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/downloads.svg" name="Downloads" />,
+      },
+    ],
   },
   {
     id: nanoid(),

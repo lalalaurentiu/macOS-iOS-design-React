@@ -1,5 +1,5 @@
 #root {
-  width: 100vw;
+  min-width: 1400px;
   height: 100vh;
   background-image: url("./../public/images/macbook.webp");
   background-size: cover;
