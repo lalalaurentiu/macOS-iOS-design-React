@@ -1361,7 +1361,30 @@ const navcomponentsRight = [
     name: {
       logoUrl: "/images/romania-flag.svg",
     },
-    subSection: [],
+    subSection: [
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/check.svg" name="Romania" />,
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/showemoji.svg" name="Show Emoji & Symbols" />,
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/showkeyboard.svg" name="Show Keyboard Viewer" />,
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Show Input Sources Name",
+      },
+      {
+        id: nanoid(),
+        name: "Open Keyboard Preferences...",
+      },
+    ],
   },
   {
     id: nanoid(),
