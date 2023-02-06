@@ -17,7 +17,7 @@ export default function Navbar(props) {
     ) : navComponent.name.sectionName ? (
       <Navlink key={navComponent.id} name={navComponent.name.sectionName} />
     ) : (
-      navComponent.name.func(navComponent.id)
+      navComponent.name.func(navComponent.id, navComponent)
     );
   });
 

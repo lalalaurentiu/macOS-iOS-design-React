@@ -1,6 +1,8 @@
 import React from "react";
+import { SetNavElement } from "./header/utils";
 
 export default function Battery(props) {
+  const { show, onClick, subsections } = SetNavElement(props.components);
   const [batteryLevel, setBatteryLevel] = React.useState(props.level);
 
   React.useEffect(() => {
@@ -15,15 +17,18 @@ export default function Battery(props) {
   };
 
   return (
-    <div className="battery">
+    <div onClick={onClick} className="battery">
       <div className="battery-charging">
-        <div
-          className="battery-level"
-          style={batteryLevelStyle}
-        ></div>
+        <div className="battery-level" style={batteryLevelStyle}></div>
       </div>
 
       <div className="battery-cell"></div>
+      <div
+        className="subsection-left"
+        style={show ? { display: "flex" } : { display: "none" }}
+      >
+        {subsections}
+      </div>
     </div>
   );
 }

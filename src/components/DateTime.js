@@ -1,5 +1,5 @@
 import React from "react";
-
+import { SetNavElement } from "./header/utils";
 const abreviatemonths = {
   0: "Jan",
   1: "Feb",
@@ -24,7 +24,8 @@ const abreviatedays = {
   6: "Sat",
 };
 
-export default function DateTime() {
+export default function DateTime(props) {
+  const { show, onClick, subsections } = SetNavElement(props.components);
   const child = React.useRef(null);
 
   function getDateTimes() {
@@ -52,8 +53,14 @@ export default function DateTime() {
   }, []);
 
   return (
-    <div className="nav-date-time" ref={child}>
+    <div onClick={onClick} className="nav-date-time" ref={child}>
       {getDateTimes()}
+      <div
+        className="subsection-left"
+        style={show ? { display: "flex" } : { display: "none" }}
+      >
+        {subsections}
+      </div>
     </div>
   );
 }
