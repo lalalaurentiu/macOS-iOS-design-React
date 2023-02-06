@@ -4,6 +4,8 @@ import Wifi from "../wifi";
 import DateTime from "../DateTime";
 import { nanoid } from "nanoid";
 import NaviconGo from "./navicon-GO";
+import OnOffButton from "./onoffbutton";
+import Icon from "./icon";
 
 const navcomponentsLeft = [
   {
@@ -1361,14 +1363,66 @@ const navcomponentsRight = [
     name: {
       logoUrl: "/images/romania-flag.svg",
     },
-    subSection: [],
+    subSection: [
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/check.svg" name="Romania" />,
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/showemoji.svg" name="Show Emoji & Symbols" />,
+      },
+      {
+        id: nanoid(),
+        name: <NaviconGo url="/images/navicons/showkeyboard.svg" name="Show Keyboard Viewer" />,
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Show Input Sources Name",
+      },
+      {
+        id: nanoid(),
+        name: "Open Keyboard Preferences...",
+      },
+    ],
   },
   {
     id: nanoid(),
     name: {
       logoUrl: "/images/bluetooth.svg",
     },
-    subSection: [],
+    subSection: [
+      {
+        id: nanoid(),
+        name: "Bluetooth",
+        img: [
+          {
+            id: nanoid(),
+            name: <OnOffButton />,
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: React.createElement("span", { style: {fontSize:"10px"} }, "Devices"),
+      },
+      {
+        id: nanoid(),
+        name: <Icon url="/images/bluetooth.svg" name="Apple Bluetooth Mouse" />,
+      },
+      {
+        id: nanoid(),
+        name: <Icon url="/images/airpods.svg" name="Apple AirPods" />,
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Bluetooth Preferences...",
+      },
+    ],
   },
   {
     id: nanoid(),
