@@ -40,6 +40,14 @@
   cursor: pointer;
 }
 
+/* date and time subsections */
+
+.nav-date-time > .subsection-left{
+  margin-top: 6px;
+}
+
+/* ------------------------------- */
+
 .navicon {
   height: 16px;
   width: 16px;
@@ -80,6 +88,10 @@
   height: 5px;
   border-right: 1px solid rgba(138, 138, 138, 0.3);
   border-radius: 50%;
+}
+
+.battery > .subsection-left{
+  margin-top:38px;
 }
 
 /* ------------------------------------------- */

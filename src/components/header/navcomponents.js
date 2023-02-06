@@ -1427,14 +1427,14 @@ const navcomponentsRight = [
   {
     id: nanoid(),
     name: {
-      func: (key) => <Battery key={key} level={100} />,
+      func: (key, subSection) => <Battery key={key} level={100} components={subSection} />,
     },
     subSection: [],
   },
   {
     id: nanoid(),
     name: {
-      func: (key) => <Wifi key={key} />,
+      func: (key, subSection) => <Wifi key={key} components={subSection} />,
     },
     subSection: [],
   },
@@ -1462,7 +1462,7 @@ const navcomponentsRight = [
   {
     id: nanoid(),
     name: {
-      func: (key) => <DateTime key={key} />,
+      func: (key, subSection) => <DateTime key={key} components={subSection} />,
     },
     subSection: [],
   },
