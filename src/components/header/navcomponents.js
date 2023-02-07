@@ -6,6 +6,7 @@ import { nanoid } from "nanoid";
 import NaviconGo from "./navicon-GO";
 import OnOffButton from "./onoffbutton";
 import Icon from "./icon";
+import BatteryProcentaje from "./batteryProcentaje";
 
 const navcomponentsLeft = [
   {
@@ -993,7 +994,9 @@ const navcomponentsLeft = [
       },
       {
         id: nanoid(),
-        name: <NaviconGo url="/images/navicons/document.svg" name="Documents" />,
+        name: (
+          <NaviconGo url="/images/navicons/document.svg" name="Documents" />
+        ),
         img: [
           {
             id: nanoid(),
@@ -1029,7 +1032,9 @@ const navcomponentsLeft = [
       },
       {
         id: nanoid(),
-        name: <NaviconGo url="/images/navicons/download.svg" name="Downloads" />,
+        name: (
+          <NaviconGo url="/images/navicons/download.svg" name="Downloads" />
+        ),
         img: [
           {
             id: nanoid(),
@@ -1119,7 +1124,9 @@ const navcomponentsLeft = [
       },
       {
         id: nanoid(),
-        name: <NaviconGo url="/images/navicons/icloud.svg" name="iCloud Drive" />,
+        name: (
+          <NaviconGo url="/images/navicons/icloud.svg" name="iCloud Drive" />
+        ),
         img: [
           {
             id: nanoid(),
@@ -1137,7 +1144,9 @@ const navcomponentsLeft = [
       },
       {
         id: nanoid(),
-        name: <NaviconGo url="/images/navicons/appstore.svg" name="Applications" />,
+        name: (
+          <NaviconGo url="/images/navicons/appstore.svg" name="Applications" />
+        ),
         img: [
           {
             id: nanoid(),
@@ -1155,7 +1164,9 @@ const navcomponentsLeft = [
       },
       {
         id: nanoid(),
-        name: <NaviconGo url="/images/navicons/utilities.svg" name="Utilities" />,
+        name: (
+          <NaviconGo url="/images/navicons/utilities.svg" name="Utilities" />
+        ),
         img: [
           {
             id: nanoid(),
@@ -1174,7 +1185,7 @@ const navcomponentsLeft = [
       },
       {
         id: nanoid(),
-        name:"Recent Folders",
+        name: "Recent Folders",
         img: [
           {
             id: nanoid(),
@@ -1185,7 +1196,7 @@ const navcomponentsLeft = [
       },
       {
         id: nanoid(),
-        name:"Go To Folder",
+        name: "Go To Folder",
         img: [
           {
             id: nanoid(),
@@ -1203,7 +1214,7 @@ const navcomponentsLeft = [
       },
       {
         id: nanoid(),
-        name:"Connect to Server",
+        name: "Connect to Server",
         img: [
           {
             id: nanoid(),
@@ -1260,7 +1271,7 @@ const navcomponentsLeft = [
           {
             id: nanoid(),
             name: "`",
-          }
+          },
         ],
         break: true,
       },
@@ -1312,7 +1323,9 @@ const navcomponentsLeft = [
       },
       {
         id: nanoid(),
-        name: <NaviconGo url="/images/navicons/downloads.svg" name="Downloads" />,
+        name: (
+          <NaviconGo url="/images/navicons/downloads.svg" name="Downloads" />
+        ),
       },
     ],
   },
@@ -1324,7 +1337,11 @@ const navcomponentsLeft = [
     subSection: [
       {
         id: nanoid(),
-        name: React.createElement("input", { type: "text", placeholder: "Search", className: "navlink-help-search" }),
+        name: React.createElement("input", {
+          type: "text",
+          placeholder: "Search",
+          className: "navlink-help-search",
+        }),
       },
       {
         id: nanoid(),
@@ -1371,11 +1388,21 @@ const navcomponentsRight = [
       },
       {
         id: nanoid(),
-        name: <NaviconGo url="/images/navicons/showemoji.svg" name="Show Emoji & Symbols" />,
+        name: (
+          <NaviconGo
+            url="/images/navicons/showemoji.svg"
+            name="Show Emoji & Symbols"
+          />
+        ),
       },
       {
         id: nanoid(),
-        name: <NaviconGo url="/images/navicons/showkeyboard.svg" name="Show Keyboard Viewer" />,
+        name: (
+          <NaviconGo
+            url="/images/navicons/showkeyboard.svg"
+            name="Show Keyboard Viewer"
+          />
+        ),
         break: true,
       },
       {
@@ -1407,7 +1434,11 @@ const navcomponentsRight = [
       },
       {
         id: nanoid(),
-        name: React.createElement("span", { style: {fontSize:"10px"} }, "Devices"),
+        name: React.createElement(
+          "span",
+          { style: { fontSize: "10px" } },
+          "Devices"
+        ),
       },
       {
         id: nanoid(),
@@ -1427,9 +1458,47 @@ const navcomponentsRight = [
   {
     id: nanoid(),
     name: {
-      func: (key, subSection) => <Battery key={key} level={100} components={subSection} />,
+      func: (key, subSection) => (
+        <Battery key={key} level={100} components={subSection} />
+      ),
     },
-    subSection: [],
+    subSection: [
+      {
+        id: nanoid(),
+        name: <BatteryProcentaje level={100} />,
+      },
+      {
+        id: nanoid(),
+        name: React.createElement(
+          "span",
+          { style: { fontSize: "10px" } },
+          "Power Sources Battery"
+        ),
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: React.createElement(
+          "span",
+          { style: { fontSize: "10px" } },
+          "Using Singnificant Energy"
+        ),
+      },
+      {
+        id: nanoid(),
+        name: (
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <img src="/images/icons/safari.svg" className="navicon"></img>
+            <span>Safari</span>
+          </div>
+        ),
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Battery Preferences...",
+      },
+    ],
   },
   {
     id: nanoid(),

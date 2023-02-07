@@ -90,10 +90,15 @@
   border-radius: 50%;
 }
 
-.battery > .subsection-left{
-  margin-top:38px;
+.battery-container > .subsection-left{
+  margin-top:8px;
 }
 
+.battery-procentaje{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /* ------------------------------------------- */
 
 /* wifi */
