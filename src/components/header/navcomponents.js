@@ -7,6 +7,7 @@ import NaviconGo from "./navicon-GO";
 import OnOffButton from "./onoffbutton";
 import Icon from "./icon";
 import BatteryProcentaje from "./batteryProcentaje";
+import Navicon from "./navicon";
 
 const navcomponentsLeft = [
   {
@@ -1505,7 +1506,45 @@ const navcomponentsRight = [
     name: {
       func: (key, subSection) => <Wifi key={key} components={subSection} />,
     },
-    subSection: [],
+    subSection: [
+      {
+        id: nanoid(),
+        name: "Wi-Fi",
+        img: [
+          {
+            id: nanoid(),
+            name: <OnOffButton />,
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: <Icon url="/images/navicons/wifi.svg" name="Network 5G" />,
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/navicons/lock.svg",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Other Networks...",
+        img: [
+          {
+            id: nanoid(),
+            img: "/images/navicons/arrowrightcircle.svg",
+          },
+        ],
+        break: true,
+      },
+      {
+        id: nanoid(),
+        name: "Network Preferences...",
+      },
+    ],
   },
   {
     id: nanoid(),

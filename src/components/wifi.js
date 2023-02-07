@@ -38,7 +38,7 @@ export default function Wifi(props) {
       </div>
       <div
         className="subsection-left"
-        style={show ? { display: "flex" } : { display: "none" }}
+        style={show ? { display: "flex", transform:"translateX(calc(-100% + 30px))" } : { display: "none" }}
       >
         {subsections}
       </div>
