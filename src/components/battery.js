@@ -17,12 +17,14 @@ export default function Battery(props) {
   };
 
   return (
-    <div onClick={onClick} className="battery">
-      <div className="battery-charging">
-        <div className="battery-level" style={batteryLevelStyle}></div>
-      </div>
+    <div className="battery-container">
+      <div onClick={onClick} className="battery">
+        <div className="battery-charging">
+          <div className="battery-level" style={batteryLevelStyle}></div>
+        </div>
 
-      <div className="battery-cell"></div>
+        <div className="battery-cell"></div>
+      </div>
       <div
         className="subsection-left"
         style={show ? { display: "flex" } : { display: "none" }}
