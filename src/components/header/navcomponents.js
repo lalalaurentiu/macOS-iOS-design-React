@@ -7,7 +7,7 @@ import NaviconGo from "./navicon-GO";
 import OnOffButton from "./onoffbutton";
 import Icon from "./icon";
 import BatteryProcentaje from "./batteryProcentaje";
-import Navicon from "./navicon";
+import NavbarSearch from "./navbarSearch";
 
 const navcomponentsLeft = [
   {
@@ -1549,9 +1549,8 @@ const navcomponentsRight = [
   {
     id: nanoid(),
     name: {
-      logoUrl: "/images/search.svg",
+      func: (key) => < NavbarSearch key={key} components={{url:"./images/search.svg"}} />,
     },
-    subSection: [],
   },
   {
     id: nanoid(),
