@@ -10,19 +10,18 @@ export default function NavbarSearch(props) {
 
     const child = React.useRef(null);
 
-    const useEffect = React.useEffect(() => {
-        const handleOutsideClick = (e) => {
-            if (child.current !== e.target) {
-                setShow(false);
-            }
-        };
+    React.useEffect(() => {
+      const handleOutsideClick = (e) => {
+          if (child.current !== e.target) {
+              setShow(false);
+          }
+      };
 
-        body.addEventListener("click", handleOutsideClick);
-        return () => {
-            body.removeEventListener("click", handleOutsideClick);
-        };
+      body.addEventListener("click", handleOutsideClick);
+      return () => {
+          body.removeEventListener("click", handleOutsideClick);
+      };
     }, [body]);
-
     
   return (
     <div className="navbar-search">

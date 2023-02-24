@@ -8,6 +8,7 @@ import OnOffButton from "./onoffbutton";
 import Icon from "./icon";
 import BatteryProcentaje from "./batteryProcentaje";
 import NavbarSearch from "./navbarSearch";
+import NavbarControlCenter from "./navbarControlCenter";
 
 const navcomponentsLeft = [
   {
@@ -1555,7 +1556,8 @@ const navcomponentsRight = [
   {
     id: nanoid(),
     name: {
-      logoUrl: "/images/toogles.svg",
+      // logoUrl: "/images/toogles.svg",
+      func: (key) => <NavbarControlCenter key={key} components={{url:"./images/toogles.svg"}} />,
     },
     subSection: [],
   },
